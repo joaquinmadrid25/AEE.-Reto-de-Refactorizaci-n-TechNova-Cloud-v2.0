@@ -165,8 +165,10 @@
 
                         <xs:attribute name="ubicacion" type="xs:string" use="required"/>
                     </xs:complexType>
+     </simplexType>
             <xs:element>
             </xs:sequence>
     </xs:element>
   </complexType>
+</simplexType>
 </xs:schema>
