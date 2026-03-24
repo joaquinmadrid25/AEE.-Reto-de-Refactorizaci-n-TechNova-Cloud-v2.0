@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="CatalogoCloud.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<CatalogoCloud_v2>
+
+    <centro_datos ubicacion="Paris">
+        <servidor id="srv-db-01" estado="encendido">
+            <so version="Ubuntu 20.04"/>
+            <cpu arquitectura="x86_64"/>
+            
+            <discos>
+                <disco tipo="HDD" capacidad="4"/>
+                <disco tipo="NVMe" capacidad="10"/>
+            </discos>
+
+            <servicios>
+                <servicio nombre="web">
+                    <puerto>80</puerto>
+                </servicio>
+                <servicio nombre="ssh">
+                    <puerto>22</puerto>
+                </servicio>
+            </servicios>
+        </servidor>
+
+        <servidor id="srv-ai-01" estado="apagado">
+            <so version="Ubuntu 22.04"/>
+            <cpu arquitectura="ARM"/>
+            <gpu modelo="NVIDIA A100"/>
+
+            <discos>
+                <disco tipo="NVMe" capacidad="12"/>
+            </discos>
+
+            <servicios>
+                <servicio nombre="api">
+                    <puerto>443</puerto>
+                </servicio>
+            </servicios>
+        </servidor>
+    </centro_datos>
+
+    <centro_datos ubicacion="Madrid">
+        <servidor id="srv-web-01" estado="apagado">
+            <so version="Debian 10"/>
+            <cpu arquitectura="x86"/>
+
+            <discos>
+                <disco tipo="HDD" capacidad="2"/>
+            </discos>
+        </servidor>
+    </centro_datos>
+
+</CatalogoCloud_v2>
