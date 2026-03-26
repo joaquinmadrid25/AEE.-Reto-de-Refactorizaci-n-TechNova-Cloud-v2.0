@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="CatalogoCloud.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-model href="CatalogoCloud_v2.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 
 <CatalogoCloud_v2>
 
-    <servidor id="srv-web-01" racha="A1" estado ="activo">
+    <servidor id="srv-web-01" rack="A1" estado ="activo">
         <hardware>
             <cpu>Intel Xeon</cpu>
             <ram>32GB</ram>
